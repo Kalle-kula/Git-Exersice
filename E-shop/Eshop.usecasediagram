@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="53e34c84-8c7d-4ed2-9398-e37e5781aea2" name="Eshop" linkedPackageId="cf9b3b49-a005-40a4-a220-4e5b69778d38" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="3555d0b3-d957-4a0f-84fc-c62375dc82c7">
+      <profileInstance Id="343aff16-21ea-4de0-8861-ae277a0c0332" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fa111df8-c42f-4467-8cd1-e75bcb72b675">
+      <profileInstance Id="91a32b0e-32a7-480d-904f-59bab54120e6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="b8a22b2e-7018-417c-bcbd-7abe68f0ba12" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0debec4-217b-4210-a3e6-070b48360f5c" />
+        <targetEnds>
+          <association Id="82a13ccd-142c-498e-be4c-54a08a863594" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Purchase" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2f294cc4-2b71-46c7-b9d6-595e2102d7d5" LastKnownName="Purchase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b97f70d2-30db-40cc-8b81-4140ddfd98ef" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e10a866-1a94-4433-9d81-9ede5b40f182" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0801f7b4-eca3-4d6b-bd0c-7fd5d346830b" name="Purchase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0aab4e63-36ac-43bb-a148-86de11a84120" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eae7a296-4b81-402a-a635-2998391e46b7" />
+          </association>
+          <association Id="e53ac76f-aab7-4ab3-8855-b0b25bc2f3c1" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Account" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="40893fae-ab96-4f0d-bc41-b62ec77a954c" LastKnownName="Account" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2136e2dd-6a17-4518-87bf-e9bedf94fa84" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1afcfa8b-7dd0-4861-b385-1e0990b80174" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa33b723-8540-43bd-9076-edaacbe6ca5f" name="Account" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0d5600c1-88d7-4c28-9192-f159571a8a45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd609cbf-ae0a-4bdf-95b3-25065361522f" />
+          </association>
+          <association Id="c0ce0913-19ff-4994-8096-81855caadba0" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Browses" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec49f7df-05c4-4b9c-967a-9c2c9a7b8b9c" LastKnownName="Browses" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2249a9a3-5bc3-4d9b-8fbd-7075b071c1f7" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d831c719-ba7c-4364-a798-91cddb9a33e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="452ae197-65b6-4266-88d2-d2b4244a5003" name="Browses" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dcbb073e-881b-4f7c-88f2-037947ee113e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="385cb0d1-e803-4703-84a5-8a64013c1eab" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="29452000-e593-4637-b6f7-1c7f30a0087b" name="Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e70904b0-63a4-40b8-aa1d-4c40475d5c57" />
+        <targetEnds>
+          <association Id="e04ca7bf-b1ba-4835-b03b-87f8ec24de29" isDerived="false" sourceEndRoleName="Manager" targetEndRoleName="Stock" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df0e0cb5-c2b8-4c98-9016-b7d1d97a918e" LastKnownName="Products" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9cacfae-c1cf-4164-b99e-058c75c2ea23" name="Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76ca98ad-a46e-4a46-a941-b12e94abd516" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71270c58-48c2-4c71-85c0-d40782fa26a7" name="Stock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b495ffa-cac6-4a93-874d-8a961e83277d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d6431d77-4dbe-4b2a-9eed-d1eadbdf4a3d" />
+          </association>
+          <association Id="a4af36ad-945d-4462-a60d-bd3e013f7417" isDerived="false" sourceEndRoleName="Manager" targetEndRoleName="Manage Orders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5e5e4fa3-3b97-4ce5-ab77-8ec7ca47a09d" LastKnownName="Orders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39378127-9760-4be4-93a9-f0ec3555ad1b" name="Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fabcbf07-2e22-46da-854c-752492e4ff7d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="70e523b4-f6c2-452b-b21d-806a8a3db9a1" name="Manage Orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1820e366-71f1-4dd1-8b7f-df4a8cb1c455" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b3d7fb35-1cfc-46f3-8878-db93f65ad099" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2f294cc4-2b71-46c7-b9d6-595e2102d7d5" name="Purchase" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d18f45ac-5f08-4f69-9fdd-131971271ddb" />
+        <targetEnds>
+          <association Id="155d3099-f733-40a7-bd77-03582a405687" isDerived="false" sourceEndRoleName="Purchase" targetEndRoleName="ShoppingCart" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="88122081-0630-4916-85a4-fbde2a9b4f79" LastKnownName="Manage ShoppingCart" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2673cb37-7f44-4f99-a193-0dbd3e9bd0a5" name="Purchase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fafb8e10-2718-4b06-8458-1bbe37d97215" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1aa9e83e-c4b2-42d9-9999-2250f41d44d0" name="ShoppingCart" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ea154801-ac5e-414e-a6cb-c30307328be6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1d035472-7515-4021-8817-6ca64dd320d6" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="40893fae-ab96-4f0d-bc41-b62ec77a954c" name="Account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60e3f6a7-4f4c-45bc-a6f0-07b6f91c2530" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec49f7df-05c4-4b9c-967a-9c2c9a7b8b9c" name="Browses" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4291a9e4-64ec-4a74-864d-8f2e22471767" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="df0e0cb5-c2b8-4c98-9016-b7d1d97a918e" name="Products" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce8d69f7-79b4-41d7-8c67-5f3880c65d2e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5e5e4fa3-3b97-4ce5-ab77-8ec7ca47a09d" name="Orders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="262f3f25-7527-466c-939f-2c943fe1f264" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="03bf43e0-7e6d-4d81-9178-ddf3e70e418b" name="Manage account" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f12d2b25-510e-4d63-88f6-d32c65769705" />
+        <suppliersInternal>
+          <dependency Id="69c251ac-3690-4abf-86e2-3e4ace3fe328">
+            <useCaseMoniker Id="40893fae-ab96-4f0d-bc41-b62ec77a954c" LastKnownName="Account" />
+            <elementDefinition Id="04e1e792-71a7-458e-80af-707d1b52696d" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="88122081-0630-4916-85a4-fbde2a9b4f79" name="Manage ShoppingCart" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6aa9c48e-6fea-4d1d-a0e6-62bdec75143b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6f087eea-12b3-4990-9256-0d28c07713d1" name="Products" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce3cac8b-677d-4bd9-b2d6-d90e32ab5c22" />
+        <suppliersInternal>
+          <dependency Id="4369e091-c013-4f3b-a133-d9503c6fbb20">
+            <useCaseMoniker Id="ec49f7df-05c4-4b9c-967a-9c2c9a7b8b9c" LastKnownName="Browses" />
+            <elementDefinition Id="0eaa1838-5eb2-4924-b93c-be302332e456" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9e6bca08-af06-4e99-8f30-f806f81ba205" name="Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b257b8f9-05c6-4aed-b0bc-7323a2e007a3" />
+        <suppliersInternal>
+          <dependency Id="610b4c7d-9268-4e87-881b-299b0edb4cd0">
+            <useCaseMoniker Id="88122081-0630-4916-85a4-fbde2a9b4f79" LastKnownName="Manage ShoppingCart" />
+            <elementDefinition Id="3aed5f40-6dea-4c5b-99de-bb03514e1253" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6e5ca761-d21d-4168-858e-475425b4e26c" name="Manage Stock" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0cbd8f3e-18c6-4ebf-a7fc-9662fd43d549" />
+        <targetEnds>
+          <association Id="d39d60bc-6063-492d-a072-bb2c0b5ac04b" isDerived="false" sourceEndRoleName="Manage Stock" targetEndRoleName="Product Managment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df0e0cb5-c2b8-4c98-9016-b7d1d97a918e" LastKnownName="Products" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85300f68-4986-40e7-8b8c-8fa57c4f65a7" name="Manage Stock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="faeab481-a03e-4fd5-9436-2df531a92085" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87606ea2-4176-4ea1-b6e6-0ac5875bf4d5" name="Product Managment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d4e02fd7-4e20-4f6b-8f33-f95141bb2dd9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9142dbf8-b883-4e4a-be36-28ec4b08c63b" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a1cc46d-5315-49d4-b34d-72893caebadc" name="Edit Products" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a4b2dceb-461d-401e-85cc-4e3a407dcf5e" />
+        <targetEnds>
+          <association Id="3daa161c-2502-41f0-baad-40956e678c11" isDerived="false" sourceEndRoleName="Edit Products" targetEndRoleName="Product Managment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df0e0cb5-c2b8-4c98-9016-b7d1d97a918e" LastKnownName="Products" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68f6d643-4e3a-438f-ab40-74cf4838a058" name="Edit Products" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61c45e86-1794-44a6-80bd-d59cc21b6264" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d100e47-a2d9-4035-a6ec-8bd2f5c0d87e" name="Product Managment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3c6f9d26-d6c1-4a36-b59f-c5e7364c92eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e4bbbc9a-43c8-4920-9162-5161ce9de21e" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1849fc5-0650-44b2-980e-c3677c85685e" name="Manage Deliveries" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88efec73-039b-4a21-8ba9-bbcfc9d7f131" />
+        <targetEnds>
+          <association Id="66540d0b-3073-4235-9bf4-ae590d4f70c5" isDerived="false" sourceEndRoleName="Manage Deliveries" targetEndRoleName="Manage Orders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5e5e4fa3-3b97-4ce5-ab77-8ec7ca47a09d" LastKnownName="Orders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7abae83d-b2d5-4e6d-ad10-f5f74d333724" name="Manage Deliveries" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="08f031e2-f2cd-4ee1-8505-604cd18909de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d6eb648-26c8-4642-b6d2-5fd1152e8e30" name="Manage Orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="98c0d415-0f96-4aa5-9377-cd66c673425c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fda28a24-931b-4111-8ad1-37ec9318679e" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bd6e84fc-6f90-4887-a42f-6801feab17e7" name="Manage Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d15a5c8f-4295-4e78-a199-035aa5a4e451" />
+        <targetEnds>
+          <association Id="0a8869b2-807c-448a-8ff0-64cd9e5ee080" isDerived="false" sourceEndRoleName="Manage Payment" targetEndRoleName="Manage Orders" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5e5e4fa3-3b97-4ce5-ab77-8ec7ca47a09d" LastKnownName="Orders" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0603186b-0c89-4daf-8d7b-3e5b5862e3ce" name="Manage Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2c23bc54-123b-4bb7-b390-a02fd7727131" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef21ab33-670b-42e5-b0b0-56cbd6dc5501" name="Manage Orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df14a0f7-b439-4e5d-9ca9-b2c861687c28" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8468f2a0-9a37-4d22-bc85-3f4a4e5e872a" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="cf9b3b49-a005-40a4-a220-4e5b69778d38" name="E-shop">
+    <elementDefinition Id="4cf2522d-f8cd-4ea2-a2a4-52b83813896f" />
+  </package>
+</useCaseModelRoot>

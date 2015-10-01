@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="4cf2522d-f8cd-4ea2-a2a4-52b83813896f"
+  name="E-shop" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="b0debec4-217b-4210-a3e6-070b48360f5c"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="eae7a296-4b81-402a-a635-2998391e46b7"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Purchase"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d18f45ac-5f08-4f69-9fdd-131971271ddb"
+              LastKnownName="Purchase"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e10a866-1a94-4433-9d81-9ede5b40f182"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0aab4e63-36ac-43bb-a148-86de11a84120"
+                  name="Purchase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cd609cbf-ae0a-4bdf-95b3-25065361522f"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Account"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="60e3f6a7-4f4c-45bc-a6f0-07b6f91c2530"
+              LastKnownName="Account"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1afcfa8b-7dd0-4861-b385-1e0990b80174"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d5600c1-88d7-4c28-9192-f159571a8a45"
+                  name="Account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="385cb0d1-e803-4703-84a5-8a64013c1eab"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Browses"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4291a9e4-64ec-4a74-864d-8f2e22471767"
+              LastKnownName="Browses"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d831c719-ba7c-4364-a798-91cddb9a33e2"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcbb073e-881b-4f7c-88f2-037947ee113e"
+                  name="Browses"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e70904b0-63a4-40b8-aa1d-4c40475d5c57"
+        name="Manager"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6a4ebbe7-bc6e-45d4-bfc6-4f5b9bb4ca80"
+            isDerived="false"
+            sourceEndRoleName="Manager"
+            targetEndRoleName="Manage Accounts"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e9a86e85-1d24-47c1-a88a-ead7b0e3aab3"
+              LastKnownName="Manage User Accounts"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b33abeb-8c06-4140-86eb-270e1b0f7f66"
+                  name="Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="775d542e-7e8f-4719-8690-73a68ea977d5"
+                  name="Manage Accounts"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d6431d77-4dbe-4b2a-9eed-d1eadbdf4a3d"
+            isDerived="false"
+            sourceEndRoleName="Manager"
+            targetEndRoleName="Stock"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ce8d69f7-79b4-41d7-8c67-5f3880c65d2e"
+              LastKnownName="Products"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="76ca98ad-a46e-4a46-a941-b12e94abd516"
+                  name="Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b495ffa-cac6-4a93-874d-8a961e83277d"
+                  name="Stock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b3d7fb35-1cfc-46f3-8878-db93f65ad099"
+            isDerived="false"
+            sourceEndRoleName="Manager"
+            targetEndRoleName="Manage Orders"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="262f3f25-7527-466c-939f-2c943fe1f264"
+              LastKnownName="Orders"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fabcbf07-2e22-46da-854c-752492e4ff7d"
+                  name="Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1820e366-71f1-4dd1-8b7f-df4a8cb1c455"
+                  name="Manage Orders"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d18f45ac-5f08-4f69-9fdd-131971271ddb"
+        name="Purchase"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1d035472-7515-4021-8817-6ca64dd320d6"
+            isDerived="false"
+            sourceEndRoleName="Purchase"
+            targetEndRoleName="ShoppingCart"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6aa9c48e-6fea-4d1d-a0e6-62bdec75143b"
+              LastKnownName="Manage ShoppingCart"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fafb8e10-2718-4b06-8458-1bbe37d97215"
+                  name="Purchase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea154801-ac5e-414e-a6cb-c30307328be6"
+                  name="ShoppingCart"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="60e3f6a7-4f4c-45bc-a6f0-07b6f91c2530"
+        name="Account"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4291a9e4-64ec-4a74-864d-8f2e22471767"
+        name="Browses"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e9a86e85-1d24-47c1-a88a-ead7b0e3aab3"
+        name="Manage User Accounts"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ce8d69f7-79b4-41d7-8c67-5f3880c65d2e"
+        name="Products"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="262f3f25-7527-466c-939f-2c943fe1f264"
+        name="Orders"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="21b693c4-c747-4f0b-9c51-29dcc9872aff"
+        name="Log in"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="4dfe4e9c-f461-4d64-b06f-c723f1d1b5cb">
+            <useCaseMoniker
+              Id="60e3f6a7-4f4c-45bc-a6f0-07b6f91c2530"
+              LastKnownName="Account"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91c6b7cf-9ce0-4b2e-8af9-74a91ce3722a"
+        name="Log out"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c8048803-f476-4f5b-826a-5ee0fe8cf13c">
+            <useCaseMoniker
+              Id="60e3f6a7-4f4c-45bc-a6f0-07b6f91c2530"
+              LastKnownName="Account"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f12d2b25-510e-4d63-88f6-d32c65769705"
+        name="Manage account"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="04e1e792-71a7-458e-80af-707d1b52696d">
+            <useCaseMoniker
+              Id="60e3f6a7-4f4c-45bc-a6f0-07b6f91c2530"
+              LastKnownName="Account"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+          <dependency
+            Id="d242fd81-9eb2-4ac2-8232-7f3d12ae9136">
+            <useCaseMoniker
+              Id="21b693c4-c747-4f0b-9c51-29dcc9872aff"
+              LastKnownName="Log in"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+          <dependency
+            Id="57b722b9-31ed-441d-955f-9ea0ccc547e8">
+            <useCaseMoniker
+              Id="91c6b7cf-9ce0-4b2e-8af9-74a91ce3722a"
+              LastKnownName="Log out"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cbb51915-e0a1-42b4-b28f-61f7b61fea41"
+        name="Delete account"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="b7f408dc-f50f-4d80-838e-1f0e5930f7f4">
+            <useCaseMoniker
+              Id="60e3f6a7-4f4c-45bc-a6f0-07b6f91c2530"
+              LastKnownName="Account"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6aa9c48e-6fea-4d1d-a0e6-62bdec75143b"
+        name="Manage ShoppingCart"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ce3cac8b-677d-4bd9-b2d6-d90e32ab5c22"
+        name="Products"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="0eaa1838-5eb2-4924-b93c-be302332e456">
+            <useCaseMoniker
+              Id="4291a9e4-64ec-4a74-864d-8f2e22471767"
+              LastKnownName="Browses"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b257b8f9-05c6-4aed-b0bc-7323a2e007a3"
+        name="Payment"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="3aed5f40-6dea-4c5b-99de-bb03514e1253">
+            <useCaseMoniker
+              Id="6aa9c48e-6fea-4d1d-a0e6-62bdec75143b"
+              LastKnownName="Manage ShoppingCart"
+              LastKnownLocation="E-shop.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="74685fac-164a-4d70-8b30-b58eb564ab69"
+        name="Recoveries"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0cbd8f3e-18c6-4ebf-a7fc-9662fd43d549"
+        name="Manage Stock"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9142dbf8-b883-4e4a-be36-28ec4b08c63b"
+            isDerived="false"
+            sourceEndRoleName="Manage Stock"
+            targetEndRoleName="Product Managment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ce8d69f7-79b4-41d7-8c67-5f3880c65d2e"
+              LastKnownName="Products"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="faeab481-a03e-4fd5-9436-2df531a92085"
+                  name="Manage Stock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4e02fd7-4e20-4f6b-8f33-f95141bb2dd9"
+                  name="Product Managment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a4b2dceb-461d-401e-85cc-4e3a407dcf5e"
+        name="Edit Products"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e4bbbc9a-43c8-4920-9162-5161ce9de21e"
+            isDerived="false"
+            sourceEndRoleName="Edit Products"
+            targetEndRoleName="Product Managment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ce8d69f7-79b4-41d7-8c67-5f3880c65d2e"
+              LastKnownName="Products"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61c45e86-1794-44a6-80bd-d59cc21b6264"
+                  name="Edit Products"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c6f9d26-d6c1-4a36-b59f-c5e7364c92eb"
+                  name="Product Managment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="88efec73-039b-4a21-8ba9-bbcfc9d7f131"
+        name="Manage Deliveries"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="fda28a24-931b-4111-8ad1-37ec9318679e"
+            isDerived="false"
+            sourceEndRoleName="Manage Deliveries"
+            targetEndRoleName="Manage Orders"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="262f3f25-7527-466c-939f-2c943fe1f264"
+              LastKnownName="Orders"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08f031e2-f2cd-4ee1-8505-604cd18909de"
+                  name="Manage Deliveries"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98c0d415-0f96-4aa5-9377-cd66c673425c"
+                  name="Manage Orders"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d15a5c8f-4295-4e78-a199-035aa5a4e451"
+        name="Manage Payment"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8468f2a0-9a37-4d22-bc85-3f4a4e5e872a"
+            isDerived="false"
+            sourceEndRoleName="Manage Payment"
+            targetEndRoleName="Manage Orders"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="262f3f25-7527-466c-939f-2c943fe1f264"
+              LastKnownName="Orders"
+              LastKnownLocation="E-shop.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c23bc54-123b-4bb7-b390-a02fd7727131"
+                  name="Manage Payment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df14a0f7-b439-4e5d-9ca9-b2c861687c28"
+                  name="Manage Orders"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
